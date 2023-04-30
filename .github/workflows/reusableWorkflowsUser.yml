@@ -16,7 +16,7 @@ jobs:
         run: echo Hello, world!
 
   docker:
-    uses: aristidejoudubois/udemy4-ReusableWorkflow/.github/workflows/buildAndPublishDockerImage.yml@main
+    uses: aristidejoudubois/ReusableWorkflow/.github/workflows/buildAndPublishDockerImage.yml@main
     with:
       image_name: my-awesome-app
       tag: $GITHUB_RUN_NUMBER
