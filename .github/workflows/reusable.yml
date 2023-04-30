@@ -1,7 +1,7 @@
 # This is a basic workflow to showcase the use of Reusable Workflows
 # dckr_pat_Qil3uZEu6B1PSjjea3FWEpRT7jw (docker token)
 
-name: Reusable Workflow user
+name: Reusable
 
 on:
   workflow_dispatch:
