@@ -1,0 +1,21 @@
+# This is a basic workflow to showcase the use of Reusable Workflows
+# dckr_pat_Qil3uZEu6B1PSjjea3FWEpRT7jw (docker token)
+
+name: Reusable2
+on:
+  workflow_dispatch:
+jobs:
+  do-it:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: echo Hello, world!
+  docker:
+    uses: aristidejoudubois/ReusableWorkflow/.github/workflows/build2.yml@main
+    with:
+      image_name: my-awesome-app
+      tag: $GITHUB_RUN_NUMBER
+    secrets:
+      registry_username: ${{ secrets.REGISTRY_USERNAME }}
+      registry_token: ${{ secrets.REGISTRY_TOKEN }}
