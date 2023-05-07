@@ -12,7 +12,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
   docker:
-    uses: aristidejoudubois/ReusableWorkflow/.github/workflows/build2.yml@main
+    uses: aristidejoudubois/ActionsTest/.github/workflows/test.yml@devteam
     with:
       image_name: my-awesome-app
       tag: $GITHUB_RUN_NUMBER
