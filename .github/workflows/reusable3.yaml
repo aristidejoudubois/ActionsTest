@@ -1,0 +1,15 @@
+name: dep
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: actions/checkout@v3
+      - name: papa
+        run: echo "papa"
+      - name: maman
+        run: echo "maman"
