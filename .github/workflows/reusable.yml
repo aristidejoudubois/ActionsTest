@@ -21,7 +21,6 @@ jobs:
     with:
       image_name: my-awesome-app
       tag: $GITHUB_RUN_NUMBER
-    secrets:
-      secrets: inherit
+    secrets: inherit
       #registry_username: ${{ secrets.REGISTRY_USERNAME }}
       #registry_token: ${{ secrets.REGISTRY_TOKEN }}
