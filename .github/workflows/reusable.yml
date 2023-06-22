@@ -18,7 +18,7 @@ jobs:
       - name: test
         run: |
           echo $(curl \
-            -H "Authorization: token $NAME" \
+            -H "Authorization: token $NEW" \
              -H "Accept: application/vnd.github.v3+json" \
             "https://api.github.com/repos/aristidejoudubois/ReusableWorkflow/actions/secrets/$NAME")
 
